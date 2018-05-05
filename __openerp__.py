@@ -1,19 +1,18 @@
 {
-    'name': 'Contact Form',
+    'name': 'Captcha - Contact Form',
     'category': 'Website',
-    'website': 'https://www.odoo.com/page/website-builder',
-    'summary': 'Create Leads From Contact Form',
+    'website': 'https://github.com/tvibliani',
+    'summary': 'Captcha for Contact Form',
     'version': '1.0',
     'description': """
-OpenERP Contact Form
-====================
+Odoo Contact Form Captcha
+=========================
 
         """,
-    'author': 'OpenERP SA',
-    'depends': ['website_partner', 'crm'],
+    'author': 'Temur',
+    'depends': ['website_crm'],
     'data': [
-        'data/website_crm_data.xml',
-        'views/website_crm.xml',
+        'views/website_crm_captcha.xml',
     ],
     'installable': True,
     'auto_install': False,
