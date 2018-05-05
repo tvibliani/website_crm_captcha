@@ -36,8 +36,8 @@ class contactus(super_contactus):
     @http.route(['/page/website.contactus', '/page/contactus'], type='http', auth="public", website=True)
     def contact(self, **kwargs):
         values = {}
-	self.gen_captcha(values)
-	
+        self.gen_captcha(values)
+    
         for field in ['description', 'partner_name', 'phone', 'contact_name', 'email_from', 'name']:
             if kwargs.get(field):
                 values[field] = kwargs.pop(field)
@@ -60,7 +60,7 @@ class contactus(super_contactus):
             values = dict(values, error=error, kwargs=kwargs.items())
             _logger.info("Captcha error by user: Captcha received (%s) != Captcha Sent (%s)\n"%(captcha_reseived,captcha_sent))
             return request.website.render(kwargs.get("view_from", "website.contactus"), values)
-	
+    
         return super_contactus.contactus(self, **kwargs)
 
 
