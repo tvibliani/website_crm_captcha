@@ -12,6 +12,7 @@ Odoo Contact Form Captcha
         """,
     'author': 'Temur',
     'depends': ['website_crm'],
+    'external_dependencies': {'python': ['captcha']},
     'data': [
         'views/website_crm_captcha.xml',
     ],
