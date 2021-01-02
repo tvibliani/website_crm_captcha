@@ -4,7 +4,7 @@
     'website': 'https://github.com/tvibliani/website_crm_captcha',
     'license': 'AGPL-3',
     'summary': 'Captcha for Contact Form',
-    'version': '1.0',
+    'version': '8.0.1.0.0',
     'description': """
 Odoo Contact Form Captcha
 =========================
