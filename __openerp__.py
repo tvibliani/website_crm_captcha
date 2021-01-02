@@ -2,6 +2,7 @@
     'name': 'Captcha - Contact Form',
     'category': 'Website',
     'website': 'https://github.com/tvibliani/website_crm_captcha',
+    'license': 'AGPL-3',
     'summary': 'Captcha for Contact Form',
     'version': '1.0',
     'description': """
